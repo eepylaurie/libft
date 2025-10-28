@@ -32,7 +32,7 @@ OBJ		= $(SRC:.c=.o)
 
 %.o: %.c
 		@$(CC) $(CFLAGS) -c $< -o $@
-		@echo "Compiled $<!"
+		@echo "$< compiled!"
 
 $(NAME): $(OBJ)
 		@$(AR) $(NAME) $(OBJ)
